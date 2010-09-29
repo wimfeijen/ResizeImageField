@@ -32,11 +32,14 @@ Usage
 Scaled images will be stored in 'photos/scaled', 
 thumbnails will be stored in 'photos/thumb'.
 
-Access your images from your template. Add:
-| {% load resize_filters %} 
-| {{ address.photo.url|thumb }} 
-or:
-> {{ address.photo.url|scaled }} 
+Access your images from your template. Add::
+
+  {% load resize_filters %} 
+  {{ address.photo.url|thumb }} 
+
+or::
+
+  {{ address.photo.url|scaled }} 
 
 Defaults
 -------
